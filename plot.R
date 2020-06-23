@@ -9,3 +9,4 @@ data <- read.csv("household_power_consumption.txt", na.strings = "?", sep = ";",
                  colClasses = classes)
 data <- tibble(data)
 data <- filter(data, Date == ymd("2007-02-01") | Date == ymd("2007-02-02"))
+with(data, hist(Global_active_power, main = "Global Active Power",  xlab = "Global Active Power (kilowatts)", col = "red"))
