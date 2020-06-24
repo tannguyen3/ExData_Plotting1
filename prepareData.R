@@ -32,6 +32,7 @@ classes <- c("myDate", "myTime", rep("numeric", 7))
 data <- read.csv(dataFile, na.strings = "?", sep = ";", comment.char = "",
                  colClasses = classes)
 data <- tibble(data)
+names(data) <- tolower(names(data))
 
 # only keep data for 2-day period in February, 2007
-data <- filter(data, Date == ymd("2007-02-01") | Date == ymd("2007-02-02"))
+data <- filter(data, date == ymd("2007-02-01") | date == ymd("2007-02-02"))
