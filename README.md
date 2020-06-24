@@ -33,6 +33,12 @@ web site</a>:
 <li><b>Sub_metering_3</b>: energy sub-metering No. 3 (in watt-hour of active energy). It corresponds to an electric water-heater and an air-conditioner.</li>
 </ol>
 
+## To get run the assignment and get result
+
+- Source the 'plot1.R', 'plot2.R' etc. to your R Console and 
+- Then plots will be output in folder "result"
+- Note that, data will be downloaded automatically if not available in the R project.
+
 ## Loading the data
 
 
