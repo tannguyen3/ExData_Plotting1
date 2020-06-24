@@ -1,6 +1,7 @@
 source("prepareData.R")
 
 plotFile <- file.path(plotsFolder, "plot2.png")
+par(mfrow = c(1,1))
 png(filename = plotFile, width = 480, height = 480)
 
 
